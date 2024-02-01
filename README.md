@@ -14,7 +14,7 @@ The Python interpreter used for this project is Python 3.12.x. Make sure you hav
 
 ## Run in Browser
 
-You can also run this program in your browser by clicking on the following link: (Run in Replit)[https://replit.com/@AeRo7484/RAI3rdTermAssignment]
+You can also run this program in your browser by clicking on the following link: [Run in Replit](https://replit.com/@AeRo7484/RAI3rdTermAssignment)
 
 ## How to Run
 
