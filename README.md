@@ -1,6 +1,6 @@
 # Student Grade Calculator
 
-This project is developed by Akshat Singh Kushwaha, a student of Class 9-I, Roll Number 6, Admission Number 115046. It's a Python program that calculates the grade of a student based on their marks in theory and practical exams.
+A Python program that calculates the grade of a student based on their marks in theory and practical exams.
 
 ## Python Interpreter
 
@@ -22,6 +22,4 @@ To run this program, navigate to the directory containing the `main.py` file in 
 
 ```bash
 python main.py
-
-
 
