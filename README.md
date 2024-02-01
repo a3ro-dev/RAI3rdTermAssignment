@@ -12,9 +12,16 @@ The Python interpreter used for this project is Python 3.12.x. Make sure you hav
 
 2. **random**: This module implements pseudo-random number generators for various distributions. In this project, it's used to select a random remark for the student.
 
+## Run in Browser
+
+You can also run this program in your browser by clicking on the following link: (Run in Replit)[https://replit.com/@AeRo7484/RAI3rdTermAssignment]
+
 ## How to Run
 
 To run this program, navigate to the directory containing the `main.py` file in your terminal and run the following command:
 
 ```bash
 python main.py```
+
+
+
