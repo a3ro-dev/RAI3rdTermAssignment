@@ -21,7 +21,7 @@ You can also run this program in your browser by clicking on the following link:
 To run this program, navigate to the directory containing the `main.py` file in your terminal and run the following command:
 
 ```bash
-python main.py```
+python main.py
 
 
 
