@@ -1,6 +1,6 @@
 import unittest
 import asyncio
-from main import Student
+from gradeprogram.main import Student
 
 class TestStudent(unittest.TestCase):
     def setUp(self):
