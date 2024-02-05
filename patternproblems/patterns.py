@@ -8,19 +8,11 @@ class Patterns:
         """
         self.n = n
 
-    def rectangle(self):
-        """
-        Print a rectangle pattern of '*' with height and width of n.
-        """
-        print("\nRectangle Pattern: A rectangle of '*' with height and width of n.")
-        for i in range(self.n):
-            print("*" * self.n)
-
     def triangle(self):
         """
         Print a right-angled triangle pattern of '*' with height of n.
         """
-        print("\nTriangle Pattern: A right-angled triangle of '*' with height of n.")
+        print(f"\nTriangle Pattern: A right-angled triangle of '*' with height of {self.n}.")
         for i in range(self.n):
             print("*" * (i+1))
 
@@ -28,7 +20,7 @@ class Patterns:
         """
         Print a pyramid pattern of '*' with height of n.
         """
-        print("\nPyramid Pattern: A pyramid of '*' with height of n.")
+        print(f"\nPyramid Pattern: A pyramid of '*' with height of {self.n}.")
         for i in range(self.n):
             print(' ' * (self.n - i - 1) + '*' * (2 * i + 1))
 
@@ -36,7 +28,7 @@ class Patterns:
         """
         Print a pyramid pattern of numbers with height of n.
         """
-        print("\nNumber Pyramid Pattern: A pyramid of numbers with height of n.")
+        print(f"\nNumber Pyramid Pattern: A pyramid of numbers with height of {self.n}.")
         for i in range(self.n):
             print(" " * (self.n - i - 1), end="")
             for j in range(i + 1):
@@ -54,23 +46,20 @@ def main():
         patterns = Patterns(n)
 
         while True:
-            print("\n1. Rectangle Pattern")
-            print("2. Triangle Pattern")
-            print("3. Pyramid Pattern")
-            print("4. Number Pyramid Pattern")
-            print("5. Exit")
+            print("\n1. Triangle Pattern")
+            print("2. Pyramid Pattern")
+            print("3. Number Pyramid Pattern")
+            print("4. Exit")
 
             choice = int(input("\nChoose the pattern you want to print: "))
 
             if choice == 1:
-                threading.Thread(target=patterns.rectangle).start()
-            elif choice == 2:
                 threading.Thread(target=patterns.triangle).start()
-            elif choice == 3:
+            elif choice == 2:
                 threading.Thread(target=patterns.pyramid).start()
-            elif choice == 4:
+            elif choice == 3:
                 threading.Thread(target=patterns.numberPyramid).start()
-            elif choice == 5:
+            elif choice == 4:
                 print("Exiting the program.")
                 break
             else:
