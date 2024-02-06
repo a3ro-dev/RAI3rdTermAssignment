@@ -96,6 +96,7 @@ class assignment2:
         """Question 11: Calculate the power of a number given base and exponent."""
         power = base ** exponent
         print("Power: ", power)
+        # print(f"Power {pow(base, exponent)}")  # Using built-in function to calculate power
 
     def calculateProduct(self, num1: float, num2: float):
         """Question 12: Calculate the product of two floating point numbers."""
@@ -121,14 +122,16 @@ class assignment2:
 
     def showIncrementAndDecrementResults(self, num: int):
         """Question 15: Show the result of pre-increment, post-increment, pre-decrement, and post-decrement."""
-        pre_increment = num + 1
-        post_increment = num + 1
-        pre_decrement = num - 1
-        post_decrement = num - 1
-        print("Pre-increment: ", pre_increment)
-        print("Post-increment: ", post_increment)
-        print("Pre-decrement: ", pre_decrement)
-        print("Post-decrement: ", post_decrement)
+        increments = ["Pre-increment: ", "Post-increment: ", "Pre-decrement: ", "Post-decrement: "]
+        operations = [1, 1, -1, -1]
+        results = []
+
+        for operation in operations:
+            result = num + operation
+            results.append(result)
+
+        for i in range(len(increments)):
+            print(increments[i], results[i])
 
     def calculateDigitSum(self, number: int):
         """Question 16: Calculate the sum of digits in a five-digit number."""
@@ -160,7 +163,7 @@ class assignment2:
 
     def solveQuadraticEquation(self, a: float, b: float, c: float):
         """Question 21: Solve a second-order quadratic equation."""
-        # ax2 + bx+ c =0
+        # ax^2 + bx + c =0
         import math
         discriminant = b**2 - 4*a*c
         if discriminant > 0:
