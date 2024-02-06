@@ -3,7 +3,7 @@
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./patternproblems",
+        "./assignment2",
         "-p",
         "*test.py"
     ],
