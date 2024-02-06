@@ -160,6 +160,7 @@ class assignment2:
 
     def solveQuadraticEquation(self, a: float, b: float, c: float):
         """Question 21: Solve a second-order quadratic equation."""
+        # ax2 + bx+ c =0
         import math
         discriminant = b**2 - 4*a*c
         if discriminant > 0:
