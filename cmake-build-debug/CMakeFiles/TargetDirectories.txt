@@ -1,0 +1,3 @@
+E:/eskoolwork/cmake-build-debug/CMakeFiles/eskoolwork.dir
+E:/eskoolwork/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/eskoolwork/cmake-build-debug/CMakeFiles/rebuild_cache.dir
