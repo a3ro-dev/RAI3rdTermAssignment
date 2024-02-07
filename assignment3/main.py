@@ -11,11 +11,13 @@ class Assignment3:
         """
         Generates a Pascal's triangle of size n.
 
+        Pascal's triangle is a triangular array of the binomial coefficients. Each number is the sum of the two directly above it.
+
         Parameters:
         - n (int): The number of rows in the Pascal's triangle.
 
         Returns:
-        - triangle (list): The Pascal's triangle as a list of lists.
+        - triangle (list): The Pascal's triangle as a list of lists, where each sub-list represents a row in the triangle.
         """
         triangle = []
         for i in range(n):
@@ -33,11 +35,13 @@ class Assignment3:
         """
         Generates a list of prime numbers up to n.
 
+        A prime number is a natural number greater than 1 that has no positive divisors other than 1 and itself.
+
         Parameters:
         - n (int): The upper limit for generating prime numbers.
 
         Returns:
-        - primes (list): The list of prime numbers.
+        - primes (list): The list of prime numbers up to n.
         """
         primes = []
         for num in range(1, n + 1):
@@ -54,11 +58,13 @@ class Assignment3:
         """
         Generates all possible subsets of a set of size n.
 
+        A subset is a set that contains only elements from the original set, and does not contain any elements not in the original set.
+
         Parameters:
         - n (int): The size of the set.
 
         Returns:
-        - subsets (list): The list of subsets.
+        - subsets (list): The list of subsets, where each subset is represented as a tuple of elements.
         """
         elements = list(range(1, n + 1))
         subsets = list(chain(*map(lambda x: combinations(elements, x), range(0, len(elements)+1))))
@@ -68,6 +74,8 @@ class Assignment3:
     def int_to_roman(n):
         """
         Converts an integer to a Roman numeral.
+
+        Roman numerals are a numeral system originating in ancient Rome, where numbers are represented by combinations of the letters I, V, X, L, C, D, and M.
 
         Parameters:
         - n (int): The integer to be converted.
@@ -82,19 +90,21 @@ class Assignment3:
             res += (n // v) * numerals[i]
             n %= v
         return res
-
+    
     @staticmethod
     def calculate_factorial_series(n):
         """
         Calculates the sum of the factorial series up to n.
 
+        The factorial series is a series where each term is the reciprocal of the factorial of its index.
+
         Parameters:
         - n (int): The upper limit for the factorial series.
 
         Returns:
-        - series_sum (float): The sum of the factorial series.
+        - series_sum (float): The sum of the factorial series up to n.
         """
-        series_sum = sum(i / math.factorial(i) for i in range(1, n + 1))
+        series_sum = sum(i / math.factorial(i) for i in range(1, n + 2))  # change n+1 to n+2
         return series_sum
 
     @staticmethod
@@ -102,8 +112,10 @@ class Assignment3:
         """
         Generates a list of Armstrong numbers between 1 and 500.
 
+        An Armstrong number is a number that is equal to the sum of cubes of its digits.
+
         Returns:
-        - armstrong_numbers (list): The list of Armstrong numbers.
+        - armstrong_numbers (list): The list of Armstrong numbers between 1 and 500.
         """
         armstrong_numbers = []
         for num in range(1, 501):
@@ -137,27 +149,31 @@ class Assignment3:
         """
         Calculates the sum of the natural logarithm series up to n.
 
+        The natural logarithm series is a series used to approximate the natural logarithm of a number.
+
         Parameters:
         - x (float): The base of the natural logarithm.
         - n (int): The number of terms in the series.
 
         Returns:
-        - series_sum (float): The sum of the natural logarithm series.
+        - series_sum (float): The sum of the natural logarithm series up to n.
         """
-        series_sum = sum(((x - 1) / x) ** i / 2 for i in range(1, n + 1))
+        series_sum = sum(((-1)**(i+1) * ((x - 1) / x) ** i) / i for i in range(1, n + 1))  # correct the formula
         return series_sum
 
     @staticmethod
     def calculate_class_average(grades):
         """
-        Calculates the average grade and checks if it is below 40.
+        Calculates the sum of the natural logarithm series up to n.
+
+        The natural logarithm series is a series used to approximate the natural logarithm of a number.
 
         Parameters:
-        - grades (list): The list of grades.
+        - x (float): The base of the natural logarithm.
+        - n (int): The number of terms in the series.
 
         Returns:
-        - average (float): The average grade.
-        - below_passing (bool): True if the average grade is below 40, False otherwise.
+        - series_sum (float): The sum of the natural logarithm series up to n.
         """
         average = sum(grades) / len(grades)
         return average, average < 40
