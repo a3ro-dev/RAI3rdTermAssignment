@@ -17,7 +17,7 @@ class Assignment3:
         - n (int): The number of rows in the Pascal's triangle.
 
         Returns:
-        - triangle (list): The Pascal's triangle as a list of lists, where each sub-list represents a row in the triangle.
+        - triangle (str): The Pascal's triangle as a formatted string, where each row is on a new line and the numbers in each row are separated by spaces.
         """
         triangle = []
         for i in range(n):
@@ -28,7 +28,7 @@ class Assignment3:
                 else:
                     row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
             triangle.append(row)
-        return triangle
+        return '\n'.join(' '.join(str(num) for num in row) for row in triangle)
 
     @staticmethod
     def generate_prime_numbers(n):
