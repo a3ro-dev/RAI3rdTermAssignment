@@ -3,95 +3,46 @@ class PatternProblems:
     A class that contains methods to print various number patterns.
     """
 
-    def print_pattern1(self, n):
-        """
-        Prints a number pattern where each line contains the number repeated 'i' times.
+    @staticmethod
+    def normalAsterickRightAngledTriangle(n):
+        for i in range(n):
+            print(i*"*")
 
-        Args:
-            n (int): The number of lines to print.
+    @staticmethod
+    def normalCharacterRightAngledTriangle(n):
+        for i in range(n):
+            for j in range(i+1):
+                print(chr(65+j), end="")
+            print()
 
-        Example:
-            >>> pattern = PatternProblems()
-            >>> pattern.print_pattern1(5)
-            1
-            22
-            333
-            4444
-            55555
-        """
-        for i in range(n+1):
-            char = str(i)
-            print(char * i)
-
-    def print_pattern2(self, n):
-        """
-        Prints a number pattern where each line contains the number repeated 'n-i' times.
-
-        Args:
-            n (int): The number of lines to print.
-
-        Example:
-            >>> pattern = PatternProblems()
-            >>> pattern.print_pattern2(5)
-            0
-            11
-            222
-            3333
-            44444
-        """
+    @staticmethod
+    def normalNumeralRightAngledTriangle(n):
         for i in range(n):
             char = str(i)
-            print(char * (n-i))
+            print(char*i)
 
-    def print_pattern3(self, n):
-        """
-        Prints a number pattern where each line contains the number repeated 'i' times, with leading spaces.
+    @staticmethod
+    def normalCountingRightAngledTriangle(n):
+        counter = 0
+        for i in range(n):
+            for j in range(i+1):
+                print(counter, end='')
+                counter =+ 1
+            print()
 
-        Args:
-            n (int): The number of lines to print.
-
-        Example:
-            >>> pattern = PatternProblems()
-            >>> pattern.print_pattern3(5)
-                1
-               22
-              333
-             4444
-            55555
-        """
-        for i in range(n+1):
-            char = str(i)
-            print(' ' * (n-i) + char * i)
-
-    def print_pattern4(self, n):
-        """
-        Prints a number pattern where each line contains numbers from 1 to 'i'.
-
-        Args:
-            n (int): The number of lines to print.
-
-        Example:
-            >>> pattern = PatternProblems()
-            >>> pattern.print_pattern4(5)
-            1
-            12
-            123
-            1234
-            12345
-        """
+    @staticmethod
+    def leftSidedNumericalRightAngledTriangle(n):
         for i in range(1, n+1):
-            print(''.join(map(str, range(1, i+1))))
+            print(f"{' '*(n-i)}{''.join(str(j) for j in range(1, i+1))}")
 
-    def print_pattern5(self, n):
-        """
-        Prints a pattern of alphabets up to the given number 'n'.
+    @staticmethod
+    def upsideDownAstericksRightAngledTriangle(n):
+        for i in range(n):
+            print("*"*(n-i))
+    
+    @staticmethod
+    def normalPyramid(n):
+        for i in range(n):
+            print(f"{' '*(n-i-1)}{'*'*(2*i+1)}")
 
-        Parameters:
-        - n (int): The number of alphabets to print.
-
-        Returns:
-        None
-        """
-        alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        for i in range(n+1):
-            print(alphabet[:i+1])
+PatternProblems.normalPyramid(6)
