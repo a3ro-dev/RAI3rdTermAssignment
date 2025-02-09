@@ -1,0 +1,13 @@
+dataset: dict[str, dict[str, int]] = {"Prayagraj": {"temp": 30,
+                               "aqi": 100,},
+                 "Kanpur": {"temp": 40,
+                            "aqi": 200,},
+                 "Lucknow": {"temp": 35,
+                             "aqi": 150,},
+                 "Delhi": {"temp": 45,
+                           "aqi": 500,},
+                 "Mumbai": {"temp": 35,
+                            "aqi": 120,},
+                 "Vishakapatnam": {"temp": 35,
+                                  "aqi": 100,},
+                }
