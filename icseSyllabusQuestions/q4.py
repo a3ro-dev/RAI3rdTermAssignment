@@ -14,6 +14,9 @@ for i in arr:
 
 arr2 = np.array([1, 2, 3,])
 arr3 = np.array([4, 5, 6,])
-joint = np.concatenate(arr2, arr3)
+joint = np.concatenate((arr2, arr3))
 
-print(arr.find(5))
+print(np.searchsorted(arr, 5))
+
+print(np.mean(arr))
+print(np.median(arr))
