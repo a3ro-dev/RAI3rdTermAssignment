@@ -1,0 +1,16 @@
+StudentID,Full_Name,Gender,Age,Math_Score,Reading_Score,Writing_Score,DOB,City
+1,Rahul Sharma,Male,18,72,72,74,15-03-2007,Delhi
+2,Priya Singh,Female,,69,90,88,22-07-2006,Mumbai
+3,Amit Kumar,male,20,90,95,93,10-01-2005,Delhi
+4,Sneha Patel,Female,17,47,57,44,05-09-2008,Pune
+5,Ravi Verma,Male,19,76,78,75,18-11-2006,Chennai
+6,Anita Gupta,female,18,71,83,78,30-04-2007,Mumbai
+7,Vikram Joshi,Male,,65,72,67,12-08-2007,Delhi
+8,Pooja Reddy,Female,19,88,95,92,25-06-2006,Hyderabad
+9,Suresh Nair,Male,18,40,45,40,08-02-2007,Chennai
+10,Rahul Sharma,Male,18,72,72,74,15-03-2007,Delhi
+11,Meera Das,Female,-5,81,82,80,14-12-2006,Kolkata
+12,Karan Mehta,Male,19,,65,70,03-10-2006,Pune
+13,Divya Iyer,Female,200,55,60,58,27-09-2007,Chennai
+14,Arjun Rao,MALE,18,92,98,97,20-05-2007,Hyderabad
+15,Neha Kapoor,Female,17,68,75,72,16-08-2008,Dilli
