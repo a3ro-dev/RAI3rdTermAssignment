@@ -1,56 +1,45 @@
-# Student Workspace
+# Student Workspace - Akshat Singh Kushwaha
 
-Hello, welcome to the workspace of **AKSHAT SINGH KUSHWAHA**, Admission Number **115046**.
+Welcome to the academic repository of **Akshat Singh Kushwaha** (Admission No: 115046). I am a specialist in **Robotics and Artificial Intelligence (RAI)** (Class 9-10 CISCE) and **Artificial Intelligence** (Grade 11 ISC).
 
-This workspace contains four main projects:
+### 🚀 External Portfolio
+*   **[Sentinel-X](https://github.com/a3ro-dev/Sentinel-X)**: Advanced robotics systems.
+*   **[FAM](https://github.com/a3ro-dev/fam)**: AI logic & exploration.
 
-## 1. Grade Program
 
-The Grade Program is a Python application located in the `gradeprogram` directory. It's designed to help students track their grades and understand their academic performance.
+## 📂 Repository Structure
 
-- Main application: [main.py](gradeprogram/main.py)
-- Unit tests: [main.test.py](gradeprogram/main.test.py)
-- Documentation: [README.md](gradeprogram/README.md)
+### 🎓 Core Assignments
+*   **[gradeprogram](gradeprogram/)**: Python application for student grade calculation with asynchronous processing.
+*   **[patternproblems](patternproblems/)**: Pattern generation tool based on user input.
+*   **[assignment1(ISC)](assignment1(ISC)/)**: Data science / Jupyter notebook assignment.
+*   **[assignment2(ISC)](assignment2(ISC)/)**: Student data processing and cleaning.
+*   **[assignment3](assignment3/)**: Mathematical series generator (Pascal's triangle, Prime numbers, Roman numerals).
+*   **[assignment4](assignment4/)**: Fundamental data structures (Lists, Strings, Tuples) and miscellaneous basics.
+*   **[assignment5](assignment5/)**: Python theory implementation and detailed notes.
+*   **[assignment6](assignment6/)**: Advanced libraries (NumPy, Matplotlib) and functional programming.
 
-To run the Grade Program, navigate to the `gradeprogram` directory and run `main.py`.
+*   **[patternpractice](patternpractice/)**: Experimental scripts for pattern logic exploration.
+*   **[prelimsICSE](prelimsICSE/)**: Practice sets for ICSE Preliminary examinations.
+*   **[venn_diagrams.py](venn_diagrams.py)**: Python script for generating Venn diagrams.
 
-## 2. Pattern Problems
+### 📚 Educational Resources
+*   **[11thISC](11thISC/)**: 11th Grade computer science materials.
+*   **[icseSyllabusQuestions](icseSyllabusQuestions/)**: Specialized question bank for ICSE preparation.
+*   **[global-local-variables.md](global-local-variables.md)**: Conceptual guide on Python variable scoping.
+*   **[implicit-and-explicit.md](implicit-and-explicit.md)**: Guide on type conversion in Python.
 
-The Pattern Problems project is also a Python application and it's located in the `patternproblems` directory. This application prints various patterns to the console based on user input.
+## 🛠️ Development Setup
+This repository uses Python 3.12+.
+1.  **Environment**: Activate the virtual environment in `.venv`.
+2.  **Standards**: Refer to [AGENTS.md](AGENTS.md) for coding and documentation standards.
+3.  **Packages**: For any web-related components, use `pnpm` as the package manager.
 
-- Main application: [patterns.py](patternproblems/patterns.py)
-- Documentation: [README.md](patternproblems/README.md)
+## 🧪 Testing
+Most projects include unit tests (e.g., `gradeprogram/main.test.py`). Run them using:
+```bash
+python -m unittest discover -p "*.test.py"
+```
 
-To run the Pattern Problems project, navigate to the `patternproblems` directory and run `patterns.py`.
-
-## 3. Strings
-
-The Strings project is a Jupyter Notebook located in the `strings.ipynb` file. It covers various operations and methods that can be performed on strings in Python.
-
-- Notebook: [strings.ipynb](strings.ipynb)
-
-## 4. Tuples
-
-The Tuples project is a Jupyter Notebook located in the `tuples.ipynb` file. It covers various operations and methods that can be performed on tuples in Python.
-
-- Notebook: [tuples.ipynb](tuples.ipynb)
-
-## 5. Miscellaneous Python
-
-The Miscellaneous Python project is a Jupyter Notebook located in the `misc.ipynb` file. It covers various miscellaneous Python tasks and concepts.
-
-- Notebook: [misc.ipynb](misc.ipynb)
-
-## 6. Lists
-
-The Lists project is a Jupyter Notebook located in the `lists.ipynb` file. It covers various operations and methods that can be performed on lists in Python.
-
-- Notebook: [lists.ipynb](lists.ipynb)
-
-## VS Code Settings
-
-The workspace also includes a `.vscode` directory which contains settings for the Visual Studio Code editor. These settings help to ensure consistent code style and formatting across the projects.
-
-- VS Code settings: [.vscode/settings.json](.vscode/settings.json)
-
-Thank you for visiting my workspace. Enjoy exploring the projects!
+---
+*Maintained by Akshat Singh Kushwaha. See [AGENTS.md](AGENTS.md) for contribution guidelines.*

@@ -1,15 +1,6 @@
-# The provided Python code defines a `Student` class with attributes `roll_no`, `name`, `theory_marks`, and `practical_marks`. The class also has several methods:
-
-# - `calculate_average()`: Calculates the average of theory and practical marks.
-# - `get_grade(average: float)`: Determines the grade based on the average marks.
-# - `get_remark()`: Returns a random remark from a list of remarks.
-# - `check_pass_fail()`: Checks if the student has passed or failed based on the marks.
-# - `get_result()`: Returns the final result of the student.
-
-# The `__init__` method is the constructor that initializes the instance variables when a new object of the `Student` class is created. 
-
 import asyncio
 import random
+
 
 class Student:
     """
